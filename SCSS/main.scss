@@ -24,6 +24,7 @@ h1, h2, h3 {
   font-weight: 400;
   &.lg-heading {
     font-size: 6rem;
+    text-transform: uppercase
   }
   &.sm-heading {
     margin-bottom: 2rem;
@@ -54,7 +55,7 @@ header {
 main {
   padding: 4rem;
   // height: 100%;
-  min-height: calc(100vh-60px);
+  min-height: calc(100vh - 60px);
 
 
   .icons {
@@ -94,9 +95,49 @@ main {
 }
 
 .bio {
+  display: grid;
   grid-area: bio;
+  grid-gap: 30px;
   font-size: 1.5rem;
+  grid-template-areas:
+  'topwords'  
+  'quotebox1'
+  'quotebox2'
+  'quotebox3';
+  grid-template-columns: (1, 1fr);
+
+  .top-words {
+    grid-area: topwords;
+  }
+  
+  .quote-box1 {
+    grid-area: quotebox1;
+  }
+  
+  .quote-box2 {
+    grid-area: quotebox2;
+  }
+  
+  .quote-box3 {
+    grid-area: quotebox3;
+  }
+
+  .quote {
+    background: lighten($primary-color, 5);
+    padding:1rem 1.5rem 0 1.5rem;
+    border-left: solid 1px $secondary-color;
+    border-right: solid 1px $secondary-color;
+  
+    .quote-author{
+      position: relative;
+      left: 30px;
+      font-weight: 100;
+    }
+  }
 }
+
+
+
 
 .hobby-1 {
   grid-area: hobby1;
@@ -113,7 +154,38 @@ main {
 .hobby {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
+  border-top: $secondary-color solid 1px;
   border-bottom: $secondary-color solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+
+  h6 {
+    font-size: .85rem;
+    font-weight: 100;
+    word-spacing: .08rem;
+  }
+
+  .hobby-img {
+    // border: solid 1px $secondary-color;
+    box-shadow: 1px 1px 10px darken($primary-color, 40);
+    transition: 1s;
+    width: 475px;
+    height: auto;
+    
+
+    &:hover {
+      box-shadow: 0px 0px 25px lighten($secondary-color, 10);
+      border-radius: 9px;
+    }
+  }
+
+  .paragraph {
+    text-indent: 50px;
+    padding: 0 15px;
+  }
 }
 
 // Projects
@@ -135,6 +207,35 @@ main {
   }
 }
 
+//Contact Page
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 1px solid white;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
+
 //button styles 
 .btn {
   display: block;
@@ -144,7 +245,7 @@ main {
 
   &:hover {
     background: $secondary-color;
-    color: #000;
+    color: set-text-color($secondary-color);
     @include easeOut;
   }
 }
@@ -168,6 +269,7 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
 
 
 @import 'mobile';
