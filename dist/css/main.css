@@ -118,13 +118,13 @@ body {
       z-index: -1;
       background: rgba(25, 27, 25, 0.5); }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading, h2.lg-heading, h3.lg-heading, h4.lg-heading {
     font-size: 6rem;
     text-transform: uppercase; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading, h2.sm-heading, h3.sm-heading, h4.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(30, 32, 30, 0.5); }
@@ -261,6 +261,25 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+
+.postgres {
+  width: 150px;
+  height: auto; }
+
+.electron {
+  width: 150px;
+  height: auto; }
+
+.jest {
+  width: 150px;
+  height: auto; }
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;

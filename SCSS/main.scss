@@ -19,7 +19,7 @@ body {
 
 // Headings
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   font-weight: 400;
   &.lg-heading {
@@ -233,6 +233,31 @@ main {
       }
     }
   }
+}
+
+// Skills
+
+.postgres {
+  width: 150px;
+  height: auto;
+}
+
+.electron {
+  width: 150px;
+  height: auto;
+}
+
+.jest {
+  width: 150px;
+  height: auto;
+}
+
+.skills-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
 }
 
 
