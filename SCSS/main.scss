@@ -44,7 +44,7 @@ header {
   width: 100%;
 
   .bio-img {
-    background: $bio-img;
+    // background: $bio-img;
   }
 }
 
@@ -238,17 +238,17 @@ main {
 // Skills
 
 .postgres {
-  width: 150px;
+  width: 155px;
   height: auto;
 }
 
 .electron {
-  width: 150px;
+  width: 160px;
   height: auto;
 }
 
 .jest {
-  width: 150px;
+  width: 147px;
   height: auto;
 }
 
@@ -258,6 +258,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 30px;
+
 }
 
 
