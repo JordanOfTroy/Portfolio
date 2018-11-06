@@ -233,12 +233,25 @@ main {
     padding: 0 15px; }
 
 .projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .projects .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 460px; }
+    .projects .item .item_info {
+      position: relative;
+      height: 459px;
+      border: 1px solid lightgreen;
+      padding: 20px;
+      margin-left: 20px; }
   .projects img {
-    width: 100%;
-    border: 3px solid white; }
+    width: 950px; }
     .projects img:hover {
       opacity: 0.5;
       border-color: lightgreen;
@@ -346,9 +359,10 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    font-size: 65px; }
   .projects {
     grid-template-columns: repeat(1, 1fr); }
   .hobby-img {

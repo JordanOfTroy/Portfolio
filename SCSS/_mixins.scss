@@ -35,7 +35,7 @@
 // Media Query Mixins
 
 @mixin mediaSm {
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 520px){
     @content;
   }
 }
