@@ -212,6 +212,9 @@ main {
       border: 1px solid $secondary-color;
       padding: 20px;
       margin-left: 20px;
+      p {
+        text-indent: 50px;
+      }
     }
   }
 
@@ -219,13 +222,6 @@ main {
 
   img {
    width: 950px;
-    // border: 3px solid white;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
   }
 }
 

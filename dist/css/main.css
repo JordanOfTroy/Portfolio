@@ -250,12 +250,10 @@ main {
       border: 1px solid lightgreen;
       padding: 20px;
       margin-left: 20px; }
+      .projects .item .item_info p {
+        text-indent: 50px; }
   .projects img {
     width: 950px; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: lightgreen;
-      transition: all 0.5s ease-out; }
 
 .boxes {
   display: flex;
