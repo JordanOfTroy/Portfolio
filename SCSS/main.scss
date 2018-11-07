@@ -203,25 +203,27 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 50px 0px;
     height: 460px;
 
     .item_info {
       position: relative;
-      height: 459px;
+      height: 540px;
       border: 1px solid $secondary-color;
       padding: 20px;
       margin-left: 20px;
       p {
         text-indent: 50px;
+        padding: 0px 20px;
       }
     }
   }
 
 
 
-  img {
+  .img {
    width: 950px;
+   height: auto;
   }
 }
 
@@ -298,12 +300,14 @@ main {
   @extend .btn;
   background: darken($primary-color, 50);
   color: white;
+  margin-top: 20px;
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #444;
+  margin-top: 20px;
 }
 
 #main-footer {

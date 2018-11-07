@@ -242,18 +242,20 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 50px 0px;
     height: 460px; }
     .projects .item .item_info {
       position: relative;
-      height: 459px;
+      height: 540px;
       border: 1px solid lightgreen;
       padding: 20px;
       margin-left: 20px; }
       .projects .item .item_info p {
-        text-indent: 50px; }
-  .projects img {
-    width: 950px; }
+        text-indent: 50px;
+        padding: 0px 20px; }
+  .projects .img {
+    width: 950px;
+    height: auto; }
 
 .boxes {
   display: flex;
@@ -305,11 +307,13 @@ main {
 
 .btn-dark {
   background: rgba(0, 0, 0, 0.986);
-  color: white; }
+  color: white;
+  margin-top: 20px; }
 
 .btn-light {
   background: rgba(150, 157, 150, 0.986);
-  color: #444; }
+  color: #444;
+  margin-top: 20px; }
 
 #main-footer {
   text-align: center;
