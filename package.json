@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
@@ -9,6 +8,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
     "node-sass": "^4.9.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanOfTroy/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JordanOfTroy/Portfolio/issues"
+  },
+  "homepage": "https://github.com/JordanOfTroy/Portfolio#readme",
+  "description": ""
 }

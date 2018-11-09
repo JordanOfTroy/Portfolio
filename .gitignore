@@ -1,3 +1,5 @@
 node_modules
 
 about_me
+
+.env
