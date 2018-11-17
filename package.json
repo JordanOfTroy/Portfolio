@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    
+    "sass": "node-sass -w public/scss/ -o dist/css/ --recursive"
   },
-  "author": "",
+  "author": "Jordan Smithson",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.1.0",
