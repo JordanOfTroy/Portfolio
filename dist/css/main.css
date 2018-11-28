@@ -352,7 +352,7 @@ main {
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
+    .menu-branding .bio-img {
       height: 150px;
       width: 150px; }
   .about-info {
@@ -361,7 +361,7 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 576px) {
   main#home h1 {
     margin-top: 10vh;
     font-size: 65px; }
