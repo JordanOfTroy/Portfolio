@@ -129,6 +129,7 @@
         }
       }
     }
+
     // I was stupid and Projects is also under the ID of 'about'
     div.projects {
       width: 100vw;
@@ -183,5 +184,36 @@
       font-size: 1.25rem;
     }
   }
+
+  main#contact {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    padding: 0px;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .lg-heading {
+      font-size: 3rem;
+    }
+
+    .sm-heading {
+      font-size: 1.22rem;
+    }
+
+    .boxes {
+      width: 100%;
+
+      div {
+        width: 100%;
+        border: solid 1px $secondary-color;
+        font-size: 1rem;
+        align-content: center;
+        position: relative;
+      }
+    }
+  }
+
 
 }

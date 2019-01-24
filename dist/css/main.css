@@ -433,4 +433,24 @@ main {
   main#skills .lg-heading {
     font-size: 3rem; }
   main#skills .sm-heading {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  main#contact {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    padding: 0px;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    main#contact .lg-heading {
+      font-size: 3rem; }
+    main#contact .sm-heading {
+      font-size: 1.22rem; }
+    main#contact .boxes {
+      width: 100%; }
+      main#contact .boxes div {
+        width: 100%;
+        border: solid 1px lightgreen;
+        font-size: 1rem;
+        align-content: center;
+        position: relative; } }
