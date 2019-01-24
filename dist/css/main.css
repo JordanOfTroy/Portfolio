@@ -402,4 +402,8 @@ main {
           height: auto; }
   div.menu-branding.show img.bio-img {
     height: 7rem;
-    width: 7rem; } }
+    width: 7rem; }
+  main#skills .lg-heading {
+    font-size: 3rem; }
+  main#skills .sm-heading {
+    font-size: 1.25rem; } }
