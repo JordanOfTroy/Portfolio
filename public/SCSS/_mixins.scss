@@ -34,6 +34,12 @@
 
 // Media Query Mixins
 
+@mixin mediaXSm {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
 @mixin mediaSm {
   @media screen and (max-width: 576px){
     @content;
