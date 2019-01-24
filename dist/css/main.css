@@ -371,10 +371,35 @@ main {
     width: 300px;
     height: auto; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   main#home h1.lg-heading {
     font-size: 3rem;
     text-align: center; }
+  main#about {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column; }
+    main#about .lg-heading {
+      font-size: 3rem; }
+    main#about .sm-heading {
+      font-size: 1.25rem; }
+    main#about div.about-info {
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 0 1.25rem; }
+      main#about div.about-info img.bio-img {
+        height: 17rem;
+        width: 17rem;
+        margin-bottom: 1rem; }
+      main#about div.about-info .hobby {
+        margin-bottom: 2.5rem; }
+        main#about div.about-info .hobby a img.hobby-img {
+          width: 95%;
+          height: auto; }
   div.menu-branding.show img.bio-img {
     height: 7rem;
     width: 7rem; } }

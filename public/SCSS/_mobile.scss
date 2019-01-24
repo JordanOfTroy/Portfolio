@@ -92,6 +92,45 @@
     text-align: center;
   }
 
+  main#about {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .lg-heading {
+      font-size: 3rem;
+    }
+
+    .sm-heading {
+      font-size: 1.25rem;
+    }
+
+    div.about-info {
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 0 1.25rem;
+
+      img.bio-img {
+        height: 17rem;
+        width: 17rem;
+        margin-bottom: 1rem;
+      }
+
+      .hobby {
+        margin-bottom: 2.5rem;
+
+        a img.hobby-img {
+          width: 95%;
+          height: auto;
+        }
+      }
+    }
+  }
+
   div.menu-branding.show img.bio-img {
     height: 7rem;
     width: 7rem;
