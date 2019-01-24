@@ -400,6 +400,33 @@ main {
         main#about div.about-info .hobby a img.hobby-img {
           width: 95%;
           height: auto; }
+    main#about div.projects {
+      width: 100vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0 1rem; }
+      main#about div.projects section.item {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px lightgreen;
+        padding: 1rem; }
+        main#about div.projects section.item .item_info {
+          position: relative;
+          width: 100%;
+          height: auto;
+          border: none; }
+          main#about div.projects section.item .item_info p {
+            text-indent: 0px;
+            text-align: justify; }
+        main#about div.projects section.item video.img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem; }
   div.menu-branding.show img.bio-img {
     height: 7rem;
     width: 7rem; }

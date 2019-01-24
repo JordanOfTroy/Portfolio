@@ -129,6 +129,43 @@
         }
       }
     }
+    // I was stupid and Projects is also under the ID of 'about'
+    div.projects {
+      width: 100vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0 1rem;
+
+      section.item {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px $secondary-color;
+        padding: 1rem;
+
+        .item_info {
+          position: relative;
+          width: 100%;
+          height: auto;
+          border: none;
+
+          p {
+            text-indent: 0px;
+            text-align: justify;
+          }
+        }
+
+        video.img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
 
   div.menu-branding.show img.bio-img {
